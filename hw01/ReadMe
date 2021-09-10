@@ -1,0 +1,17 @@
+Aidan Moss 9/10/21
+
+Etch a Sketch Game
+
+Use "python3 hw01.py" to start game
+
+enter integer for length and width for board size
+
+use w,a,s,d to move once board is initialized 
+
+w = up
+s = down
+a = left
+d = right
+
+x to exit game safely
+c to clear board
