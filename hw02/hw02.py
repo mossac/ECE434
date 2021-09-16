@@ -120,10 +120,10 @@ def bluebut(channel):
     arr[xpos][ypos] = 'X'
     
 
-GPIO.add_event_detect(sw4, GPIO.RISING, callback=whitebut, bouncetime=200)
-GPIO.add_event_detect(sw3, GPIO.RISING, callback=greenbut, bouncetime=200)
-GPIO.add_event_detect(sw1, GPIO.RISING, callback=bluebut, bouncetime=200)
-GPIO.add_event_detect(sw2, GPIO.RISING, callback=redbut, bouncetime=200)
+GPIO.add_event_detect(sw4, GPIO.RISING, callback=whitebut, bouncetime=100)
+GPIO.add_event_detect(sw3, GPIO.RISING, callback=greenbut, bouncetime=100)
+GPIO.add_event_detect(sw1, GPIO.RISING, callback=bluebut, bouncetime=100)
+GPIO.add_event_detect(sw2, GPIO.RISING, callback=redbut, bouncetime=100)
 
 
 while True:
