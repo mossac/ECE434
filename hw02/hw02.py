@@ -17,8 +17,9 @@ GPIO.setup(sw3, GPIO.IN)
 GPIO.setup(sw2, GPIO.IN)
 GPIO.setup(sw1, GPIO.IN)
 
-xsize = input("What width do you want for your game?\n")
-ysize = input("What height do you want for your game?\n")
+xsize = input("What width/height do you want for your game?\n")
+ysize = xsize
+
  
 arr = [[' ' for i in range(int(xsize))] for j in range(int(ysize))] 
 
