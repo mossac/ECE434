@@ -44,4 +44,6 @@ HW02: contains the updated etch a sketch code where you can use four
 |  0/1 | fail2ban
 | 17/20   | **Total**
 
-Vido missing - 5
+Video missing - 5
+
+Found video:  +5
