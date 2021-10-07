@@ -25,7 +25,7 @@ def index():
         }
 	return render_template('index3.html', **templateData)
 	
-@app.route("/<deviceName>/<action>")
+@app.route("/<deviceName>/action")
 def action(deviceName, action):
 	if deviceName == 'ledRed':
 		actuator = ledRed

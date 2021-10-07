@@ -6,7 +6,7 @@ import sys
 import smbus
 from flask import Flask, render_template, request
 app = Flask(__name__)
-ledRed = "P9_15"
+ledRed = "P9_14"
 GPIO.setup(ledRed, GPIO.OUT)   
 # turn leds OFF 
 GPIO.output(ledRed, GPIO.HIGH)
@@ -41,71 +41,8 @@ ysize = 8;
 ypos = 0x00 
 xpos = 0x00
 
-@app.route("/")
-def index():
-	# Read Sensors Status
-	xpos = 0x00
-	templateData = {
-              'title' : 'GPIO output Status!',
-              'ledRed'  : xpos,
-        }
-	return render_template('index6.html', **templateData)
-	
-@app.route("/<deviceName>/<action>")
-def action(deviceName, action):
-	if deviceName == 'ledRed':
-		actuator = ledRed
-
-	if action == "on":
-		GPIO.output(actuator, GPIO.HIGH)
-		
-	if action == "off":
-		GPIO.output(actuator, GPIO.LOW)
-		     
-	xpos = GPIO.input(ledRed)
-    
-    
-	templateData = {
-              'ledRed'  : xpos,
-	}
-
-	bus.write_i2c_block_data(matrix, 0, game)
-	return render_template('index3.html', **templateData)
-if __name__ == "__main__":
-   app.run(host='0.0.0.0', port=8081, debug=True)
-    
-    
-while True:
-    
-    
-    
-    print("Cursor pos, Y = " + str(xpos) + " X =" + str(ypos) + " ")
-    cmd = input("Next move?\n")
-    if cmd == "x": break
-    if cmd == "c": 
-        arr = [[' ' for i in range(int(xsize))] for j in range(int(ysize))] 
-        for x in range(int(xsize*2)):
-            game[x] = 0x00;
-    if cmd == "w": 
-        xpos-=1
-        
-        
-    if cmd == "s": 
-        xpos+=1
-        
-       
-    if cmd == "a": 
-        ypos+=1
-        
-        
-    if cmd == "d": 
-        ypos-=1
-       
-      
-        
-   
-    
-   
+def nextState():
+    global xpos, ypos
     if ypos > 7: ypos=7
     if xpos > 7 : xpos=7
     if ypos < 0: ypos=0
@@ -119,4 +56,56 @@ while True:
    
    
     bus.write_i2c_block_data(matrix, 0, game)
+    
+@app.route("/")
+def index():
+	# Read Sensors Status
+	xpos = 0x00
+	templateData = {
+              'title' : 'GPIO output Status!',
+              'xpos'  : xpos,
+              'ypos' :  ypos
+        }
+	return render_template('index6.html', **templateData)
+	
+@app.route("/<deviceName>/<action>")
+def action(deviceName,action):
+	if deviceName == 'MOVE':
+	    global xpos, ypos
+	
+
+	if action == "Up":
+	    xpos+=1
+	
+		
+	if action == "Down":
+	    xpos-=1
+		
+	if action == "Left":
+	    ypos-=1
+	
+	if action == "Right":
+	    ypos+=1
+	
+    
+	templateData = {
+              'xpos'  : xpos,
+              'ypos' :  ypos
+	}
+    
+    
+	nextState()
+    
+	return render_template('index6.html', **templateData)
+if __name__ == "__main__":
+   app.run(host='0.0.0.0', port=8081, debug=True)
+    
+    
+
+      
+        
+   
+    
+   
+
     
