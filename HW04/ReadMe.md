@@ -13,12 +13,13 @@ Descriptions:
 Leds.py: using mmap to toggle gpio ports using two buttons that control LEDS, USR1 
         and USR3
 
-fastToggle.py: All the functionality of LEDs.py but also has a toggle in the main 
+fastToggle.py: All the functionality of LEDs.py but also h`as a toggle in the main 
         while loop. This quickly turns a external LED on and off. I measured this 
         on an oscilloscope and this was was much faster than previous measurements
         and it got even faster when i removed the sleep.
 
 *How fast was it?*
+        around 73 kHz
 
 text.sh: use bash text.sh to display a pretty picture featuring a banana with text
         overlayed on it that reads "I Love Linux-AidanMoss" on a external LCD
