@@ -6,6 +6,7 @@ fastToggle.py
 text.sh
 hw04Flask.py
 LCDText amd BorisLCD
+ReadTemp.sh
 
 
 Descriptions:
@@ -27,3 +28,6 @@ hw04Flask.py: creates a webpage using flask, there on 4 buttons on the website,
         
 LCDText amd BorisLCD: Pictures of the LCD with text overlayed on a picture and a
         picture of Boris on my LCD
+        
+ReadTemp.sh: Reads the data in from the TMP101 tempurature sensor using the kernel driver. T
+        hen output this to the terminal/

@@ -56,7 +56,13 @@ def nextState():
    
    
     bus.write_i2c_block_data(matrix, 0, game)
-    
+
+def clear():
+    arr = [[' ' for i in range(int(xsize))] for j in range(int(ysize))] 
+    for x in range(int(xsize*2)):
+        game[x] = 0x00;
+   
+            
 @app.route("/")
 def index():
 	# Read Sensors Status
@@ -87,7 +93,9 @@ def action(deviceName,action):
 	if action == "Right":
 	    ypos+=1
 	
-    
+	if action == "Clear":
+	    clear()
+	    
 	templateData = {
               'xpos'  : xpos,
               'ypos' :  ypos
