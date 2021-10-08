@@ -17,6 +17,7 @@ fastToggle.py: All the functionality of LEDs.py but also has a toggle in the mai
         on an oscilloscope and this was was much faster than previous measurements
         and it got even faster when i removed the sleep.
 
+*How fast was it?*
 
 text.sh: use bash text.sh to display a pretty picture featuring a banana with text
         overlayed on it that reads "I Love Linux-AidanMoss" on a external LCD
@@ -27,3 +28,18 @@ hw04Flask.py: creates a webpage using flask, there on 4 buttons on the website,
         
 LCDText amd BorisLCD: Pictures of the LCD with text overlayed on a picture and a
         picture of Boris on my LCD
+
+# hw04 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+|  0/2 | Memory map     | *Missing*
+|  4/4 | mmap()
+|  0/4 | i2c via Kernel | *Missing*
+|  0/5 | Etch-a-Sketch via flask | *Need to demo*
+|  0/5 | LCD display    | *Need to demo*
+|      | Extras
+| 4/20 | **Total**
+
+*My comments are in italics. --may*
+
