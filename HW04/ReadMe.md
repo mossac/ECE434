@@ -41,10 +41,10 @@ ReadTemp.sh: Reads the data in from the TMP101 tempurature sensor using the kern
 | ----------- | ----------- |
 |  0/2 | Memory map     | *Missing*
 |  4/4 | mmap()
-|  0/4 | i2c via Kernel | *Missing*
-|  0/5 | Etch-a-Sketch via flask | *Need to demo*
-|  0/5 | LCD display    | *Need to demo*
+|  4/4 | i2c via Kernel | *Missing*
+|  5/5 | Etch-a-Sketch via flask | *Need to demo*
+|  5/5 | LCD display    | *Need to demo*
 |      | Extras
-| 4/20 | **Total**
+| 18/20 -2 Late| **Total**
 
 *My comments are in italics. --may*
