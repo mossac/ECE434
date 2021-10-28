@@ -1,0 +1,24 @@
+(Beginning to about 12 minutes in)
+1.	Where does Julia Cartwright work?
+a.	National Instruments
+2.	What is PREEMT_RT? Hint: Google it.
+a.	It is the real time kernel patch
+3.	What is mixed criticality?
+a.	It is a when a embedded system is running both real time and non-real time applications that may need to coordinate 
+4.	How can drivers misbehave?
+a.	The driver stacks are stored between both RT and non-RT tasks
+5.	What is Δ in Figure 1?
+a.	Time in which an external event occurs and when its interrupt is run in software
+6.	What is Cyclictest[2]?
+a.	It just takes a time stamp, sleeps for a time then runs another time stamp and finds the time the system actually slept
+7.	What is plotted in Figure 2?
+a.	A system that is running the cyclictest on the same hardware both with RT and without RT
+8.	What is dispatch latency? Scheduling latency?
+a.	The time it takes software to be dispatched to hardware . The time it takes the scheduler to get the process to the CPU
+9.	What is mainline?
+a.	How traditional systems deal with real time events 
+10.	What is keeping the External event in Figure 3 from starting?
+a.	The longest running interrupt handler in the system 
+11.	Why can the External event in Figure 4 start sooner?
+a.	It forces IRQ threads through that wake up the handler threads
+
