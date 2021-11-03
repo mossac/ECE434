@@ -13,3 +13,13 @@ setup.h: contains command to auth token with blynk mobile app.
 Project Links:
 https://elinux.org/ECE434_Project-Infinity_Mirror
 https://github.com/mossac/InfMirror
+
+# hw07 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+| 5/5 | Blynk - TMP101
+| 5/5 | **Total**
+
+*My comments are in italics. --may*
+
