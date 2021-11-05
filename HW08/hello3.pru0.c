@@ -27,7 +27,7 @@ void main(void) {
 		
 		__R30 |= gpio;		// Set the GPIO pin to 1
 
-		__delay_cycles(0);    // Wait 1/2 second
+		__delay_cycles(10000000);    // Wait 1/2 second
 
 		gpio1[GPIO_CLEARDATAOUT] = USR1;
         gpio1[GPIO_SETDATAOUT]   = USR2;
@@ -36,7 +36,7 @@ void main(void) {
 		
 		__R30 &= ~gpio;		// Clearn the GPIO pin
 
-		__delay_cycles(0); 
+		__delay_cycles(1000000); 
 
 	}
 	__halt();
