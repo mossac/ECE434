@@ -27,7 +27,7 @@ hello3.pru0.c: run command $config-pin P9_31 gpio to set P9_31 as correct type, 
             as the system says it does not have access to /sys if this happens just run it again
             and this fixes the issue
 
-pwm1.pru0.c: Same as the previous file expect oyu shoudl run $config-pin P9_31 pruout
+pwm1.pru0.c: Same as the previous file expect you should run $config-pin P9_31 pruout
             into $make TARGET=pwm1.pru0
 
 Question answers:
