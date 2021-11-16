@@ -11,6 +11,8 @@ VidNotes: My answers to the questions from the video "What Every Driver Develope
 
 *It's empty*
 
+*It's there now, thanks*
+
 RTTEST.png: Results from cyclic test on Real time kernel both udner load and 
     not under load
     
@@ -31,12 +33,12 @@ Comments on Plots:
 | Points      | Description |
 | ----------- | ----------- |
 |  2/2 | Project 
-|  0/5 | Questions | *empty*
+|  4/5 | Questions | *empty*, **It's there.  -1 for late**
 |  4/4 | PREEMPT_RT
 |  2/2 | Plots to 500 us
 |  5/5 | Plots - Heavy/Light load
 |  2/2 | Extras
-| 15/20 | **Total**
+| 19/20 | **Total**
 
 *My comments are in italics. --may*
 

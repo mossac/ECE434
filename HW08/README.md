@@ -1,4 +1,4 @@
-HW07
+# HW07
 
 Files:
 hello3.pru0.c
@@ -38,3 +38,15 @@ A: Runs at 1.66 Mhz and there is a decent amout of jitter/ noise with this signa
 Q: What’s the Std Dev? Is there jitter. Comment on how Stable the waveform is
 A: Std Dev is around 200 Khz, it is very stable but looks more like a sin wave than
     a PWN signal
+
+# hw08 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+| 12/14 | PRU | A bit lean
+|  0/2 | Controlling the PWM Frequency - optional
+|  0/2 | Reading an Input at Regular Intervals - optional
+|  0/2 | Analog Wave Generator - optional
+| 12/20 | **Total**
+
+*My comments are in italics. --may*
